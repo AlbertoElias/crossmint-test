@@ -27,7 +27,7 @@ export default function Wallet() {
             onClick={createAAWallet}
             className="bg-blue-500 hover:bg-blue-700 text-white font-bold ml-3 py-2 px-4 rounded focus:outline-none"
           >
-            Create account
+            Sign in
           </button>
         </div>
       )}
