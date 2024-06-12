@@ -29,3 +29,4 @@ __Note: This is just a demo with no proper authentication.__
 - Add proper authentication to the admin panel
 - Use custom NFT view instead of <CrossmintNFTCollectionView> for faster rendering and more seamless UI
 - Use passkeys for smart wallets once it's available to sync wallets between all devices and actual security.
+- Once the a collection's supply has been minted, the collection should appear as sold out to prevent further minting.

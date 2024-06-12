@@ -88,15 +88,12 @@ export async function fetchNFTs(collectionId: string): Promise<NFT[]>{
     headers: {
       'Cache-Control': 'no-store',
       ...headers
-    }
+    },
+    next: { revalidate: 0 }
   };
   
   return fetch(`${process.env.NEXT_PUBLIC_CROSSMINT_API_URL}/collections/${collectionId}/nfts?page=1`, options)
     .then(response => response.json())
-    .then((nfts) => {
-      console.log(nfts)
-      return nfts
-    })
     .then((nfts) => nfts.filter((nft: NFT) => nft.onChain.status === 'success'))
     .catch(err => {
       console.error(err);
