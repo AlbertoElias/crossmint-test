@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Druk Wide Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Druk Wide Bold'), url('/DrukWideBold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Heming';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Heming'), url('/Heming.woff2') format('woff2');
+}
+
+body {
+  font-family: 'Heming', sans-serif;
+  letter-spacing: 0.08rem;
+}
