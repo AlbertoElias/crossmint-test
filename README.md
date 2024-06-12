@@ -1,4 +1,6 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Crossmint Demo - NFT Supply Chain
+
+A simple demo to try out different APIs and SDKs provided by Crossmint. This demo showcases a simple NFT supply chain where NFTs are minted for each product purchase and then moved through different stages of the supply chain from an admin panel.
 
 ## Getting Started
 
@@ -22,12 +24,8 @@ Navigate manually to /admin to access the admin panel. You'll need to use the pa
 
 __Note: This is just a demo with no proper authentication.__
 
-## Deploy on Vercel
+## Trhings to Improve
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-
-## How To
-
-https://docs.crossmint.com/minting/guides/sell-nfts
+- Add proper authentication to the admin panel
+- Use custom NFT view instead of <CrossmintNFTCollectionView> for faster rendering and more seamless UI
+- Use passkeys for smart wallets once it's available to sync wallets between all devices and actual security.
